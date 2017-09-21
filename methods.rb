@@ -158,6 +158,12 @@ end
 
 def n_twice(str, n)
 
+	if n>0
+		return n
+	end	
+
+	return str[0..n]
+
 
 end
 

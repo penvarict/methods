@@ -83,6 +83,22 @@ describe 'Methods' do
 
   end
 
+  describe "n_twice" do 
+    it 'what charactes should be printed' do
+      n_twice("yomomma", 4).must_equal("yomo")
 
+     end
+    it 'what charactes should be printed' do
+      n_twice("computer", 5).must_equal("compu")
+
+     end
+
+
+
+
+
+
+
+  end
 
 end
