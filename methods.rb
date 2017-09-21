@@ -108,6 +108,38 @@ end
 #
 # TODO - write blackjack (tests first)
 
+def blackjack(a,b)
+
+	if a < 21 && b <21 #if both are under 21 return the higher one
+		if a>b 
+			return a
+		end
+		if b>a 
+			return b
+		end	
+
+	end	   #23,9  
+
+
+
+
+	if a > 21 || b > 21
+		if a >b
+			return b
+		end
+		if b>a
+			return a
+		end
+
+	end	
+
+	if a >21 && b >21 
+		return 0
+
+	end
+
+
+end
 
 # n_twice
 #
@@ -123,6 +155,11 @@ end
 #   * n   - an integer
 #
 # TODO - write n_twice (tests first)
+
+def n_twice(str, n)
+
+
+end
 
 
 # close_far
