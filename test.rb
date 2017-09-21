@@ -55,4 +55,34 @@ describe 'Methods' do
 
   end
 
+  describe 'blackjack' do
+
+
+    it 'what card is closest' do 
+      blackjack(19,20).must_equal(20)
+    end 
+
+    it 'what card is closest' do
+
+      blackjack(23,9).must_equal(9)
+
+    end
+    it 'what card is closest' do
+
+      blackjack(22,10).must_equal(10)
+
+    end
+
+    it 'what card is closest' do 
+
+      blackjack(23,23).must_equal(0)
+
+    end
+
+
+
+  end
+
+
+
 end
