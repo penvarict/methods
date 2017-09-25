@@ -93,13 +93,30 @@ describe 'Methods' do
 
      end
     it 'what characters should be printed' do
-      n_twice("computer", 30).must_equal("str is too long of short for word")
+      n_twice("computer", 30).must_equal("str is too long or short for word")
     end
 
 
   end
 
+  describe "close_far" do
+    it 'is it close or far?' do
+      close_far(1,2,3).must_equal("close")#both are close
+    end  
+
+    it 'is it close or far?' do 
+      close_far(2,4,9).must_equal("far") #both are far
+    end
   
+    it 'is it close or far?' do 
+      close_far(3,4,9).must_equal("close") #one is close 
+    end
+  
+
+
+
+
+  end
   
   
 end

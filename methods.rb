@@ -172,9 +172,9 @@ end
 def n_twice(str, n)
 
     if str.length < n || str.length <= n
-        return "str is too long of short for word"
+        return "str is too long or short for word"
     else
-        return "#{str[0..(n)]}#{str[(str.length - n)..(str.length)]}"
+        return "#{str[0..(n-1)]}"
     end
 
 
@@ -191,6 +191,22 @@ end
 # ------------
 #   * a - an integer
 #   * b - an integer
-#   * c - an integer
+#   * c - an integerga
 #
 # TODO - write close_far (tests first)
+
+
+
+def close_far(a,b,c) #
+
+	if (b-a)>1   || (b-c)>1 # if a or b is more than 1 away it is far
+		return "far"
+	end
+
+	if (b-a)==1 || (b-c)==1
+		return "close"
+
+	end	
+
+
+end
