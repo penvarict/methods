@@ -84,21 +84,22 @@ describe 'Methods' do
   end
 
   describe "n_twice" do 
-    it 'what charactes should be printed' do
+    it 'what characters should be printed' do
       n_twice("yomomma", 4).must_equal("yomo")
 
      end
-    it 'what charactes should be printed' do
+    it 'what characters should be printed' do
       n_twice("computer", 5).must_equal("compu")
 
      end
-
-
-
-
-
+    it 'what characters should be printed' do
+      n_twice("computer", 30).must_equal("str is too long of short for word")
+    end
 
 
   end
 
+  
+  
+  
 end
