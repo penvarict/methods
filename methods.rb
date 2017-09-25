@@ -109,6 +109,10 @@ end
 # TODO - write blackjack (tests first)
 
 def blackjack(a,b)
+	
+	if a == 21 || b == 21
+		return 21
+	end
 
 	if a < 21 && b <21 #if both are under 21 return the higher one
 		if a>b 
@@ -123,7 +127,7 @@ def blackjack(a,b)
 
 
 
-	if a > 21 || b > 21
+	if a > 21 && b > 21  #if both are under 21 return the bigger one
 		if a >b
 			return b
 		end
@@ -133,11 +137,20 @@ def blackjack(a,b)
 
 	end	
 
-	if a >21 && b >21 
+	if a >21 && b >21 #if both are over 21 then return 0
 		return 0
 
 	end
-
+	
+	if a >21 && b<21 || a <21 && b>21  #if only one is more than 21 return the smaller one
+		if a>b
+			return b
+		end
+		if b>a
+			return a
+		end	
+		
+	end
 
 end
 
@@ -158,11 +171,11 @@ end
 
 def n_twice(str, n)
 
-	if n>0
-		return n
-	end	
-
-	return str[0..n]
+    if str.length < n || str.length <= n
+        return "str is too long of short for word"
+    else
+        return "#{str[0..(n)]}#{str[(str.length - n)..(str.length)]}"
+    end
 
 
 end
